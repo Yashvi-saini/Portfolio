@@ -42,26 +42,26 @@
         padding: 10px 0;
     }
 }
-/*home styling starting*/
+/* Home styling */
 #home {
     height: 100vh; 
     display: flex;
     justify-content: center;  
-    align-items: center;     
+    align-items: center;       
     background: url("https://wallpaperaccess.com/full/5651978.png") no-repeat center center/cover;
     position: relative;
     overflow: hidden;
 }
-
 #textcontainer {
-    background: none;
+    background: none; 
     padding: 2rem;
     border-radius: 12px;
     max-width: 600px;
     text-align: center;
     animation: slideIn 3s ease forwards;
-    opacity: 0;  
+    opacity: 0; 
 }
+
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -72,6 +72,7 @@
         opacity: 1;
     }
 }
+
 #textcontainer h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -95,24 +96,27 @@
         font-size: 1rem;
     }
 }
-/*about page styling*/
+
 #about {
     padding: 5rem 2rem;
     background: #f9f9f9;
     text-align: center;
 }
+
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #222121;
     position: relative;
 }
+
 #about > p {
     font-size: 1.2rem;
     margin: 1.5rem auto 3rem;
     color: #555;
     font-weight: 500;
 }
+
 .edu {
     display: flex;
     justify-content: center;
@@ -128,6 +132,7 @@
     transition: transform 0.4s ease, box-shadow 0.3s ease;
     text-align: center;
 }
+
 .edu > div:hover {
     transform: scale(1.07);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -137,12 +142,102 @@
     color: #7a7474;
     margin: 0.3rem 0;
 }
+
 @media (max-width: 880px) {
     .edu {
         flex-direction: column;
         align-items: center;
     }
 }
+/*skill section styling*/
+/* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #222;
+    position: relative;
+} 
+#skills li {
+    margin: 1rem 0;
+}
+#skills a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #242628;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+#skills a:hover {
+    background: #656a6f;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+/*contact styling*/
+#contact {
+    padding: 4rem 2rem;
+    background: #010101; /* dark background */
+    text-align: center;
+    color: #fff;
+}
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f0eded;
+    position: relative;
+    text-transform: capitalize;
+}
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+#contact a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff; /* white text */
+    border: 2px solid #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+#contact .icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(100); /* white icons */
+}
+#contact a:hover {
+    background: #fff;
+    color: #111; 
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(255,255,255,0.2);
+}
+/*footer styling*/
+footer {
+    background-color: #121212; 
+    color: #f0f0f0;           
+    text-align: center;       
+    padding: 15px 0;          
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #333; 
+}
+
 
 
 
