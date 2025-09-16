@@ -42,3 +42,58 @@
         padding: 10px 0;
     }
 }
+/*home styling starting*/
+#home {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    background: url("https://wallpaperaccess.com/full/5651978.png") no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#textcontainer {
+    background: none;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+    animation: slideIn 3s ease forwards;
+    opacity: 0;  
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#textcontainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+#textcontainer p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+    #textcontainer {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    #textcontainer h1 {
+        font-size: 2rem;
+    }
+    #textcontainer p {
+        font-size: 1rem;
+    }
+}
+
+
