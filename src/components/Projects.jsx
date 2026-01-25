@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
@@ -78,7 +78,7 @@ const Projects = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.7, delay: index * 0.1 }}
-                                className={`flex flex-col md:flex-row items-center gap-12 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
+                                className={`flex flex-col md:flex-row items-center gap-16 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''
                                     }`}
                             >
                                 {/* Project Visual */}
@@ -108,7 +108,7 @@ const Projects = () => {
                                     </div>
 
                                     {/* Connector Dot (Desktop) */}
-                                    <div className={`hidden md:flex absolute top-1/2 ${index % 2 === 1 ? '-left-[calc(3rem+1px)]' : '-right-[calc(3rem+1px)]'} transform -translate-y-1/2 w-6 h-6 rounded-full border-4 border-[#050505] bg-gradient-to-r ${project.color} z-10 shadow-[0_0_15px_rgba(236,72,153,0.5)]`}></div>
+                                    <div className={`hidden md:flex absolute top-1/2 ${index % 2 === 1 ? '-left-11' : '-right-11'} transform -translate-y-1/2 w-6 h-6 rounded-full border-4 border-[#050505] bg-gradient-to-r ${project.color} z-10 shadow-[0_0_15px_rgba(236,72,153,0.5)]`}></div>
                                 </div>
 
                                 {/* Project Info */}
