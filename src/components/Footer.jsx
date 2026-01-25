@@ -1,26 +1,18 @@
 import React from 'react';
+import { FaLinkedinIn, FaGithub, FaEnvelope, FaCode } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="py-6">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-[#111]/80 backdrop-blur-md border border-white/5 rounded-full py-3 px-8 flex flex-col md:flex-row items-center justify-center gap-6 shadow-lg shadow-purple-500/5">
+        <footer className="bg-[#050505] text-white py-12 border-t border-white/10 relative overflow-hidden">
+            {/* Simple background glow */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[500px] h-32 bg-purple-500/10 blur-[100px] pointer-events-none"></div>
 
-                    <p className="text-gray-500 text-xs md:text-sm">
-                        &copy; {new Date().getFullYear()} Yashvi Saini.
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                    <p>&copy; 2026 Yashvi Saini. All rights reserved.</p>
+                    <p className="flex items-center gap-2 group">
+                        Thinking in components <FaCode className="text-cyan-500 animate-pulse hover:scale-120 transition-transform" /> rendering reality
                     </p>
-
-                    <div className="flex space-x-6">
-                        <a href="https://www.linkedin.com/in/yashvi-saini/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110">
-                            <i className="fab fa-linkedin-in text-base"></i>
-                        </a>
-                        <a href="https://github.com/Yashvi-saini" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110">
-                            <i className="fab fa-github text-base"></i>
-                        </a>
-                        <a href="mailto:yashvi.saini@example.com" className="text-gray-400 hover:text-pink-500 transition-colors transform hover:scale-110">
-                            <i className="fas fa-envelope text-base"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>
