@@ -70,7 +70,7 @@ const Projects = () => {
                     {/* Timeline Line (Desktop) */}
                     <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-transparent via-purple-500/50 to-transparent"></div>
 
-                    <div className="space-y-24">
+                    <div className="space-y-30">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
@@ -107,8 +107,12 @@ const Projects = () => {
                                         </div>
                                     </div>
 
-                                    {/* Connector Dot (Desktop) */}
-                                    <div className={`hidden md:flex absolute top-1/2 ${index % 2 === 1 ? '-left-11' : '-right-11'} transform -translate-y-1/2 w-6 h-6 rounded-full border-4 border-[#050505] bg-gradient-to-r ${project.color} z-10 shadow-[0_0_15px_rgba(236,72,153,0.5)]`}></div>
+                                    {/* Connector Number (Desktop) */}
+                                    <div className={`hidden md:flex items-center justify-center absolute top-1/2 ${index % 2 === 1 ? '-left-14' : '-right-14'} transform -translate-y-1/2 w-12 h-12 rounded-full border-4 border-[#050505] bg-[#111] z-10 shadow-[0_0_20px_rgba(236,72,153,0.2)] group-hover:scale-110 transition-transform duration-300`}>
+                                        <span className={`text-base font-bold bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}>
+                                            0{index + 1}
+                                        </span>
+                                    </div>
                                 </div>
 
                                 {/* Project Info */}
