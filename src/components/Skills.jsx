@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPython } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiRedux, SiMysql, SiFigma, SiTypescript } from 'react-icons/si';
 
@@ -79,7 +79,7 @@ const Skills = () => {
                     </motion.div>
 
                     {/* Innner Orbit */}
-                    <div className="absolute w-[350px] h-[350px] rounded-full border border-white/5">
+                    <div className="absolute w-[350px] h-[350px] rounded-full border border-white/5 pointer-events-none">
                         <motion.div
                             animate={{ rotate: 360 }}
                             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -94,7 +94,7 @@ const Skills = () => {
                                 return (
                                     <div
                                         key={skill.name}
-                                        className="absolute top-1/2 left-1/2"
+                                        className="absolute top-1/2 left-1/2 pointer-events-auto"
                                         style={{ transform: `translate(-50%, -50%) translate(${x}px, ${y}px)` }}
                                     >
                                         <motion.div
@@ -110,7 +110,7 @@ const Skills = () => {
                     </div>
 
                     {/* Outer Orbit */}
-                    <div className="absolute w-[600px] h-[600px] rounded-full border border-white/5 border-dashed">
+                    <div className="absolute w-[600px] h-[600px] rounded-full border border-white/5 border-dashed pointer-events-none">
                         <motion.div
                             animate={{ rotate: -360 }}
                             transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
@@ -125,7 +125,7 @@ const Skills = () => {
                                 return (
                                     <div
                                         key={skill.name}
-                                        className="absolute top-1/2 left-1/2"
+                                        className="absolute top-1/2 left-1/2 pointer-events-auto"
                                         style={{ transform: `translate(-50%, -50%) translate(${x}px, ${y}px)` }}
                                     >
                                         <motion.div
