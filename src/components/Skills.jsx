@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; 
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaPython } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiRedux, SiMysql, SiFigma, SiTypescript } from 'react-icons/si';
 
@@ -87,7 +87,7 @@ const Skills = () => {
                         >
                             {innerOrbitSkills.map((skill, index) => {
                                 const angle = (index / innerOrbitSkills.length) * 360;
-                                const radius = 175; 
+                                const radius = 175;
                                 const x = Math.cos((angle * Math.PI) / 180) * radius;
                                 const y = Math.sin((angle * Math.PI) / 180) * radius;
 
@@ -118,7 +118,7 @@ const Skills = () => {
                         >
                             {outerOrbitSkills.map((skill, index) => {
                                 const angle = (index / outerOrbitSkills.length) * 360;
-                                const radius = 300; 
+                                const radius = 300;
                                 const x = Math.cos((angle * Math.PI) / 180) * radius;
                                 const y = Math.sin((angle * Math.PI) / 180) * radius;
 

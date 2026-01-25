@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
@@ -7,10 +7,10 @@ const Projects = () => {
         {
             title: 'VOW – Virtual Office Workspace',
             description: 'A real-time virtual workspace supporting 50+ active users. Features role-based UI, task navigation, and group video calling for efficient collaboration. The Future of Remote Work, today.',
-            tech: ['React.js', 'Socket.io', 'WebRTC', 'Node.js', 'MongoDB','SFU'],
+            tech: ['React.js', 'Socket.io', 'WebRTC', 'Node.js', 'MongoDB', 'SFU'],
             link: 'https://vow-live.me/',
-            github: 'https://github.com/Yashvi-saini/VOW', 
-            image: '/vow.png', 
+            github: 'https://github.com/Yashvi-saini/VOW',
+            image: '/vow.png',
             color: 'from-purple-500 to-rose-500'
         },
         {
